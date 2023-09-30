@@ -1,0 +1,31 @@
+$HEADER$namespace $NAMESPACE$
+{
+  public class $CLASS$ 
+  {
+  private readonly IUnitOfWork _unitOfWork;
+   #region constructor
+    public $CLASS$(IUnitOfWork unitOfWork)
+    {
+        _unitOfWork = unitOfWork;
+    }    
+    #endregion
+
+    #region Request & Response
+
+    public class Request
+    {
+    }
+
+    public class Response
+    {
+    }
+
+    #endregion
+    
+    public async Task<Result<Response>> ExecuteAsync(Request request)
+    {
+        //TODO Write business code here
+        return null;
+    }
+  }
+}
